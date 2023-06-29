@@ -11,6 +11,11 @@
 		F67210422A3C230300BE74D9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F67210412A3C230300BE74D9 /* ContentView.swift */; };
 		F67210442A3C230400BE74D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F67210432A3C230400BE74D9 /* Assets.xcassets */; };
 		F67210472A3C230400BE74D9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F67210462A3C230400BE74D9 /* Preview Assets.xcassets */; };
+		F6AA5AA82A4CE2DE00371743 /* astronauts.json in Resources */ = {isa = PBXBuildFile; fileRef = F6AA5AA72A4CE2DE00371743 /* astronauts.json */; };
+		F6AA5AAA2A4CE2FD00371743 /* missions.json in Resources */ = {isa = PBXBuildFile; fileRef = F6AA5AA92A4CE2FD00371743 /* missions.json */; };
+		F6AA5AAC2A4CFAAD00371743 /* Astronaut.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6AA5AAB2A4CFAAD00371743 /* Astronaut.swift */; };
+		F6AA5AAE2A4CFD6700371743 /* Bundle-Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6AA5AAD2A4CFD6700371743 /* Bundle-Decodable.swift */; };
+		F6AA5AB02A4D0E2400371743 /* Mission.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6AA5AAF2A4D0E2400371743 /* Mission.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,11 @@
 		F67210412A3C230300BE74D9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F67210432A3C230400BE74D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F67210462A3C230400BE74D9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F6AA5AA72A4CE2DE00371743 /* astronauts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = astronauts.json; sourceTree = "<group>"; };
+		F6AA5AA92A4CE2FD00371743 /* missions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = missions.json; sourceTree = "<group>"; };
+		F6AA5AAB2A4CFAAD00371743 /* Astronaut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Astronaut.swift; sourceTree = "<group>"; };
+		F6AA5AAD2A4CFD6700371743 /* Bundle-Decodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle-Decodable.swift"; sourceTree = "<group>"; };
+		F6AA5AAF2A4D0E2400371743 /* Mission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mission.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +63,11 @@
 			children = (
 				F672103F2A3C230300BE74D9 /* MoonshotApp.swift */,
 				F67210412A3C230300BE74D9 /* ContentView.swift */,
+				F6AA5AAB2A4CFAAD00371743 /* Astronaut.swift */,
+				F6AA5AAF2A4D0E2400371743 /* Mission.swift */,
+				F6AA5AAD2A4CFD6700371743 /* Bundle-Decodable.swift */,
+				F6AA5AA72A4CE2DE00371743 /* astronauts.json */,
+				F6AA5AA92A4CE2FD00371743 /* missions.json */,
 				F67210432A3C230400BE74D9 /* Assets.xcassets */,
 				F67210452A3C230400BE74D9 /* Preview Content */,
 			);
@@ -125,7 +140,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6AA5AA82A4CE2DE00371743 /* astronauts.json in Resources */,
 				F67210472A3C230400BE74D9 /* Preview Assets.xcassets in Resources */,
+				F6AA5AAA2A4CE2FD00371743 /* missions.json in Resources */,
 				F67210442A3C230400BE74D9 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,8 +154,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6AA5AAC2A4CFAAD00371743 /* Astronaut.swift in Sources */,
 				F67210422A3C230300BE74D9 /* ContentView.swift in Sources */,
 				F67210402A3C230300BE74D9 /* MoonshotApp.swift in Sources */,
+				F6AA5AB02A4D0E2400371743 /* Mission.swift in Sources */,
+				F6AA5AAE2A4CFD6700371743 /* Bundle-Decodable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
