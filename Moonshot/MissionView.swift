@@ -27,12 +27,28 @@ struct MissionView: View {
                         .frame(maxWidth: geometry.size.width * 0.6)
                         .padding(.top)
                     
+                   
+                    
                     VStack(alignment: .leading){
+                        Rectangle()
+                            .frame(height: 2)
+                            .foregroundColor(.lightBackground)
+                            .padding(.vertical)
+                        
                         Text("Mission Highlights")
                             .font(.title.bold())
                             .padding(.bottom, 5)
                         
                         Text(mission.description)
+                        
+                        Rectangle()
+                            .frame(height: 2)
+                            .foregroundColor(.lightBackground)
+                            .padding(.vertical)
+                        
+                        Text("Crew")
+                            .font(.title.bold())
+                            .padding(.bottom, 5)
                     }
                     .padding(.horizontal)
                     
@@ -40,7 +56,7 @@ struct MissionView: View {
                         HStack{
                             ForEach(crew, id: \.role) { crewMember in
                                 NavigationLink{
-                                    Text("Astronaut details")
+                                    AstronautView(astronaut: crewMember.astronaut)
                                 }label: {
                                     HStack {
                                         Image(crewMember.astronaut.id)
@@ -58,7 +74,7 @@ struct MissionView: View {
                                                 .font(.headline)
                                             
                                             Text(crewMember.role)
-                                                .foregroundColor(.secondary)
+                                                .foregroundColor(.white)
                                         }
                                     }
                                     .padding(.horizontal)
@@ -72,7 +88,7 @@ struct MissionView: View {
         }
         .navigationTitle(mission.displayName)
         .navigationBarTitleDisplayMode(.inline)
-        .background(.background)
+        .background(.darkBackground)
     }
     
     init(mission: Mission, astronauts: [String: Astronaut]){
